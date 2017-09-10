@@ -1,5 +1,9 @@
 <div>
-  <nav>
-    <a routerLink="jugador/index" routerLinkActive="active">Jugador/</a>
-    <a routerLink="orders/add" routerLinkActive="active">Orders/</a>
+<button md-button [mdMenuTriggerFor]="menu">Menu Principal</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item routerLink="jugador/index" >Jugador</button>
+  <button md-menu-item routerLink="orders/add">Orders</button>
+</md-menu>
+</div>
+
   
